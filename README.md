@@ -1,3 +1,5 @@
+<<<<<<< HEAD
+
 <h1 align="center">
   Crachá Virtual DoWhile
 </h1>
@@ -43,4 +45,8 @@ Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](.github/LICENSE.
 
 ---
 
-Feito com ♥ by Rocketseat :wave: [Participe da nossa comunidade!](https://discordapp.com/invite/gCRAFhc)
+# Feito com ♥ by Rocketseat :wave: [Participe da nossa comunidade!](https://discordapp.com/invite/gCRAFhc)
+
+# nlw-heat-origin
+
+# nlw-heat-origin
