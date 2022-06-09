@@ -3,7 +3,7 @@
 let userInfo = {
   name:'Rafael Moreira Ramires',
   phone:973029907,
-  gitHub:"MoreiraRamires",
+  gitHub:"moreiraramires",
   youtube:'yooooutube',
   instagram:'instaaaaa',
   facebook:'faceee',
@@ -13,6 +13,7 @@ let userInfo = {
 }
 let accept=true
  
+
 function changeSocialMediaLinks (){
      
   const counter = document.querySelector('#socialLinks').childElementCount;
@@ -27,14 +28,26 @@ function changeSocialMediaLinks (){
 
  };
 
- changeSocialMediaLinks ();
 
 
 
  function getGitHubProfileInfo() {
-   const url = `https://api.github.com/users/${userInfo.gitHub}`
+   const urlGithubAPI = `https://api.github.com/users/${userInfo.gitHub}`
 
-   alert(url)
+   console.log(urlGithubAPI)
+  fetch(urlGithubAPI)
+  // arrow  function => response é um argumento qualquer  e chaves sao opcionais.
+   .then(response => response.json()) 
+   .then(data=> 
+     [ 
+      userName.textContent=data.name,
+      userBio.textContent=data.bio,
+      UserImage.src=data.avatar_url
+    ]
+    )
  };
 
+
+
+ changeSocialMediaLinks();
  getGitHubProfileInfo();
